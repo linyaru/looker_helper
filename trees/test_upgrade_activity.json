@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "test_upgrade_activity", "type": "view"}], "name": "test_upgrade_activity", "type": "explore"}]

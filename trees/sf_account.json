@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "salesforce.sf_account", "type": "sql"}], "name": "sf_account", "type": "view"}], "name": "sf_account", "type": "explore"}]

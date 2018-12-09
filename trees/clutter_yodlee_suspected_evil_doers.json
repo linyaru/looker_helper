@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "clutter_yodlee_suspected_evil_doers", "type": "view"}], "name": "clutter_yodlee_suspected_evil_doers", "type": "explore"}]

@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "cohort_eop_subs_by_tpv_tiers", "type": "view"}], "name": "cohort_eop_subs_by_tpv_tiers", "type": "explore"}]

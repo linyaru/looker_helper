@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "ndt_smux_churn_tenure_and_cohort", "type": "view"}], "name": "smux_churn_tenure_cohort", "type": "explore"}]

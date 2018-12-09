@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "masterlock.invitations", "type": "sql"}], "name": "masterlock_invitations", "type": "view"}, {"children": [{"children": [{"name": "self", "type": "self"}], "name": "masterlock.businesses", "type": "sql"}], "name": "masterlock_businesses", "type": "view"}, {"children": [{"children": [{"name": "self", "type": "self"}], "name": "report_systems", "type": "sql"}], "name": "report_systems", "type": "view"}], "name": "seats_funnels_not_daily", "type": "explore"}]

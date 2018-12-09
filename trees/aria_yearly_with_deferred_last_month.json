@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "wild_west.aria_yearly_with_deferred_last_month", "type": "sql"}], "name": "aria_yearly_with_deferred_last_month", "type": "view"}], "name": "aria_yearly_with_deferred_last_month", "type": "explore"}]

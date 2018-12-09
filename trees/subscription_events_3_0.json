@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "report_systems", "type": "sql"}], "name": "report_systems", "type": "view"}], "name": "subscription_events_3_0", "type": "explore"}]

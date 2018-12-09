@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>LookML Tree: sfmc_email_marketing_funnel</title>
+
+    <style>
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 2px;
+	}
+
+	.node text { font: 12px sans-serif; }
+
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 1px;
+	}
+
+    </style>
+
+  </head>
+
+  <body>
+
+<!-- load the d3.js library -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+
+var rownum;
+var height2;
+var width2;
+
+var margin = {top: 20, right: 200, bottom: 20, left: 120};
+    //width = 1500 - margin.right - margin.left,
+	//height = 1500 - margin.top - margin.bottom;
+
+var i = 0;
+
+var tree = d3.layout.tree();
+
+var diagonal = d3.svg.diagonal()
+	.projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("body").append("svg")
+	.attr("width", 100 + margin.right + margin.left)
+	.attr("height", 10 + margin.top + margin.bottom)
+    .append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// ************** Generate the tree diagram	 *****************
+// load the external data
+d3.json("sfmc_email_marketing_funnel.json", function(error, treeData) {
+  root = treeData[0];
+
+  rownum = computewidth(root);
+  columnnum = computedepth(root);
+  height2 = rownum * 150;
+  width2 = columnnum * 300;
+
+  var svg = d3.select("body").append("svg")
+      .attr("width", width2 + margin.right + margin.left)
+      .attr("height", height2 + margin.top + margin.bottom)
+      .attr("viewBox","0 0 " + width2 + " " + height2)
+      .append("g")
+	  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var diagonal = d3.svg.diagonal()
+	.projection(function(d) { return [d.y, d.x]; });
+
+  tree.separation(function(a, b) { return ((a.parent == root) && (b.parent == root)) ? 1 : 1; });
+  tree.size([height2, width2]);
+
+  console.log(svg.attr("width"));
+  console.log(svg.attr("height"));
+
+  update(root, svg);
+  //console.log(treeData[0]);
+});
+
+function computewidth(source) {
+    var nodes = tree.nodes(root).reverse();
+    var children = svg.selectAll("g.node")
+	  .data(nodes, function(d) {
+	      //console.log('children: ' + d.name + ', depth: ' + d.depth);
+	      return d.id || (d.id = ++i); });
+
+    var firstchildren = svg.selectAll("g.node").data(nodes.filter(function(d) {
+        return d.depth == "1"}));
+
+    var rownum = firstchildren.data().length;
+    console.log('Computing max rows: ' + rownum);
+    return rownum;
+}
+
+computedepth = function (obj) {
+    var depth = 0;
+    if (obj.children) {
+        obj.children.forEach(function (d) {
+            var tmpDepth = computedepth(d);
+            if (tmpDepth > depth) {
+                depth = tmpDepth
+            }
+        });
+    }
+    return 1 + depth;
+}
+
+function update(source, svg) {
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse(),
+	  links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 300; });
+
+  // Declare the nodes…
+  var node = svg.selectAll("g.node")
+	  .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter the nodes.
+  var nodeEnter = node.enter().append("g")
+	  .attr("class", "node")
+	  .attr("transform", function(d) {
+		  return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeEnter.append("circle")
+	  .attr("r", 7.5)
+	  .style("fill", "#fff");
+
+  nodeEnter.append("text")
+      .attr("y", function(d) {
+        return d.children || d._children ? 20 : 20 })
+      .attr("text-anchor", function(d) { return d.children || d._children ? "middle" : "middle"; })
+	  .attr("dy", ".35em")
+	  .text(function(d) { return d.name; })
+      .style("font-size","10px")
+	  .style("fill-opacity", 1)
+      .style("font-weight", "bold");
+
+  nodeEnter.append("text")
+      .attr("y", function(d) {
+        return d.children || d._children ? 35 : 35 })
+	  .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "middle" : "middle"; })
+	  .text(function(d) { return '(' + d.type + ')'; })
+      .style("font-size","8px")
+	  .style("fill-opacity", 1);
+
+  // Declare the links…
+  var link = svg.selectAll("path.link")
+	  .data(links, function(d) { return d.target.id; });
+
+  // Enter the links.
+  link.enter().insert("path", "g")
+	  .attr("class", "link")
+	  .attr("d", diagonal);
+
+}
+
+</script>
+
+  </body>
+</html>

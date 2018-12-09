@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "periscope_bucket.selligent_summary", "type": "sql"}], "name": "selligent_summary", "type": "view"}, {"children": [{"children": [{"name": "self", "type": "self"}], "name": "report_systems", "type": "sql"}], "name": "report_systems", "type": "view"}, {"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "selligent_mailing_logs", "type": "view"}], "name": "selligent_summary", "type": "explore"}]

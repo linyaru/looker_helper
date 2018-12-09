@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"children": [{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "report_system_movement_by_type", "type": "view"}], "name": "report_system_movement_by_type_raw", "type": "explore"}], "name": "ndt_first_last_seat_removal", "type": "view"}], "name": "ndt_first_last_seat_removal", "type": "explore"}], "name": "ndt_first_last_seat_removal_dim", "type": "view"}], "name": "ndt_first_last_seat_removal_dim", "type": "explore"}]

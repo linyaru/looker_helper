@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "report_systems", "type": "sql"}], "name": "report_systems", "type": "view"}, {"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "selligent_email_drip_logins", "type": "view"}], "name": "selligent_email_drip_logins", "type": "explore"}]

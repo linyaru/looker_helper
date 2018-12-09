@@ -1,0 +1,2 @@
+[
+{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "z", "type": "view"}], "name": "contractor_network_effect", "type": "explore"}]
