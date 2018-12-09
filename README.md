@@ -1,6 +1,6 @@
 # Looker Architecture
 
-LookML repository parser
+LookML repository parser: `lookml_parser.py`
 
 LookML dependencies
 
