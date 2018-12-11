@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>LookML Tree: standard_report_email_explore</title>
+
+    <style>
+
+	.node circle {
+	  fill: #fff;
+	  stroke: steelblue;
+	  stroke-width: 2px;
+	}
+
+	.node text { font: 12px sans-serif; }
+
+	.link {
+	  fill: none;
+	  stroke: #ccc;
+	  stroke-width: 1px;
+	}
+
+    </style>
+
+  </head>
+
+  <body>
+
+<!-- load the d3.js library -->
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+var i = 0;
+// ************** Generate the tree diagram	 *****************
+// load the external data
+d3.json("standard_report_email_explore.json", function(error, treeData) {
+  root = treeData[0];
+  update(root);
+  //console.log(treeData[0]);
+});
+
+function getcount(tree, source, svg, depth) {
+    var nodes = tree.nodes(root).reverse();
+    var children = svg.selectAll("g.node")
+	  .data(nodes, function(d) {
+	      //console.log('children: ' + d.name + ', x: ' + d.x);
+	      return d.id || (d.id = ++i); });
+
+    var firstchildren = svg.selectAll("g.node").data(nodes.filter(function(d) {
+        return d.depth == depth}));
+
+    var rownum = firstchildren.data().length;
+
+    return rownum;
+};
+
+computedepth = function (obj) {
+    var depth = 0;
+    if (obj.children) {
+        obj.children.forEach(function (d) {
+            var tmpDepth = computedepth(d);
+            if (tmpDepth > depth) {
+                depth = tmpDepth
+            }
+        });
+    }
+    return 1 + depth;
+};
+
+function update(source) {
+
+    var tree = d3.layout.tree().size([1500, 1500]);
+
+    var height = 1500;
+    var width = 1500;
+
+    var margin = {top: 20, right: 200, bottom: 20, left: 120};
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.right + margin.left)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var diagonal = d3.svg.diagonal()
+      .projection(function(d) { return [d.y, d.x]; });
+
+    columnnum = computedepth(root);
+
+    columnnum_arr = Array.apply(null, {length: columnnum}).map(Number.call, Number);
+
+    rownum = 0;
+
+    for (j = 0; j < columnnum; j++ ) {
+        search_depth = columnnum_arr[j];
+        depth_nodes = getcount(tree, root, svg, search_depth);
+        //console.log('search depth: ' + search_depth + '; nodes: ' + depth_nodes);
+        if (depth_nodes > rownum) {
+            rownum = depth_nodes;
+        }
+    }
+
+    //console.log(rownum);
+
+    width = columnnum * 300;
+    height = rownum * 75;
+
+    console.log('width: ' + width);
+    console.log('height: ' + height);
+
+    var nodes = tree.nodes(root).reverse(),
+	  links = tree.links(nodes);
+
+    d3.select("svg").attr("width", width);
+    d3.select("svg").attr("height", height);
+    tree = d3.layout.tree().size([height, width]);
+    console.log('tree size: ' + tree.size());
+    tree.separation(function(a, b) { return ((a.parent == root) && (b.parent == root)) ? 1 : 1; });
+
+
+    var nodes = tree.nodes(root).reverse(),
+	  links = tree.links(nodes);
+
+    // Normalize for fixed-depth.
+    nodes.forEach(function(d) { d.y = d.depth * 300; });
+
+    // Declare the nodes…
+    var node = svg.selectAll("g.node")
+        .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+    //svg.attr("viewBox","0 0 " + width + " " + height);
+
+    // Enter the nodes.
+    var nodeEnter = node.enter().append("g")
+        .attr("class", "node")
+        .attr("transform", function(d) {
+            return "translate(" + d.y + "," + d.x + ")"; });
+
+    nodeEnter.append("circle")
+        .attr("r", 7.5)
+        .style("fill", "#fff");
+
+    nodeEnter.append("text")
+        .attr("y", function(d) {
+          return d.children || d._children ? 20 : 20 })
+        .attr("text-anchor", function(d) { return d.children || d._children ? "middle" : "middle"; })
+        .attr("dy", ".35em")
+        .text(function(d) { return d.name; })
+        .style("font-size","10px")
+        .style("fill-opacity", 1)
+        .style("font-weight", "bold");
+
+    nodeEnter.append("text")
+        .attr("y", function(d) {
+          return d.children || d._children ? 35 : 35 })
+        .attr("dy", ".35em")
+        .attr("text-anchor", function(d) { return d.children || d._children ? "middle" : "middle"; })
+        .text(function(d) { return '(' + d.type + ')'; })
+        .style("font-size","8px")
+        .style("fill-opacity", 1);
+
+    // Declare the links…
+    var link = svg.selectAll("path.link")
+        .data(links, function(d) { return d.target.id; });
+
+    // Enter the links.
+    link.enter().insert("path", "g")
+        .attr("class", "link")
+        .attr("d", diagonal);
+
+}
+
+</script>
+
+  </body>
+</html>
