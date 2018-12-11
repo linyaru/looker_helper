@@ -76,7 +76,7 @@ function update(source) {
     var height = 1500;
     var width = 1500;
 
-    var margin = {top: 50, right: 200, bottom: 50, left: 120};
+    var margin = {top: 20, right: 200, bottom: 20, left: 120};
 
     var svg = d3.select("body").append("svg")
         .attr("width", width + margin.right + margin.left)
@@ -105,7 +105,10 @@ function update(source) {
     //console.log(rownum);
 
     width = columnnum * 300;
-    height = rownum * 90;
+    height = rownum * 75;
+
+    console.log('max depth: ' + columnnum);
+    console.log('max children count: ' + rownum);
 
     console.log('width: ' + width);
     console.log('height: ' + height);
@@ -113,8 +116,8 @@ function update(source) {
     var nodes = tree.nodes(root).reverse(),
 	  links = tree.links(nodes);
 
-    d3.select("svg").attr("width", width);
-    d3.select("svg").attr("height", height);
+    d3.select("svg").attr("width", width + margin.right + margin.left);
+    d3.select("svg").attr("height", height + margin.top + margin.bottom);
     tree = d3.layout.tree().size([height, width]);
     console.log('tree size: ' + tree.size());
     tree.separation(function(a, b) { return ((a.parent == root) && (b.parent == root)) ? 1 : 1; });
