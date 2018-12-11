@@ -76,7 +76,7 @@ function update(source) {
     var height = 1500;
     var width = 1500;
 
-    var margin = {top: 20, right: 200, bottom: 20, left: 120};
+    var margin = {top: 50, right: 200, bottom: 50, left: 120};
 
     var svg = d3.select("body").append("svg")
         .attr("width", width + margin.right + margin.left)
@@ -105,7 +105,7 @@ function update(source) {
     //console.log(rownum);
 
     width = columnnum * 300;
-    height = rownum * 75;
+    height = rownum * 90;
 
     console.log('width: ' + width);
     console.log('height: ' + height);
