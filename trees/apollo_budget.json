@@ -1,0 +1,2 @@
+[
+{"name": "apollo_budget", "type": "explore", "children": [{"name": "apollo_budget", "type": "view", "children": [{"name": "periscope_bucket.apollo_budget", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

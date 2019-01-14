@@ -1,2 +1,2 @@
 [
-{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "clutter_yodlee_provider_accounts_90_days", "type": "view"}], "name": "clutter_yodlee_provider_accounts_90_days", "type": "explore"}]
+{"name": "clutter_yodlee_provider_accounts_90_days", "type": "explore", "children": [{"name": "clutter_yodlee_provider_accounts_90_days", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

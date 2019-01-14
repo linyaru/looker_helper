@@ -1,0 +1,2 @@
+[
+{"name": "report_system_movement", "type": "explore", "children": [{"name": "report_system_movement", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

@@ -1,2 +1,2 @@
 [
-{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "wild_west.yearly_revenue_by_system", "type": "sql"}], "name": "yearly_revenue_by_system", "type": "view"}], "name": "yearly_revenue_by_system", "type": "explore"}]
+{"name": "yearly_revenue_by_system", "type": "explore", "children": [{"name": "yearly_revenue_by_system", "type": "view", "children": [{"name": "wild_west.yearly_revenue_by_system", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

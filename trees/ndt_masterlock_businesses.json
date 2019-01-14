@@ -1,0 +1,2 @@
+[
+{"name": "ndt_masterlock_businesses", "type": "explore", "children": [{"name": "ndt_masterlock_businesses", "type": "view", "children": [{"name": "masterlock_businesses", "type": "explore", "children": [{"name": "masterlock_businesses", "type": "view", "children": [{"name": "masterlock.businesses", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]}]}]

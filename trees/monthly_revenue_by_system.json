@@ -1,0 +1,2 @@
+[
+{"name": "monthly_revenue_by_system", "type": "explore", "children": [{"name": "monthly_revenue_by_system", "type": "view", "children": [{"name": "wild_west.monthly_revenue_by_system", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

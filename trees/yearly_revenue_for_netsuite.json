@@ -1,0 +1,2 @@
+[
+{"name": "yearly_revenue_for_netsuite", "type": "explore", "children": [{"name": "yearly_revenue_for_netsuite", "type": "view", "children": [{"name": "wild_west.yearly_revenue_for_netsuite", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

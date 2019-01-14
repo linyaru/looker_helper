@@ -1,0 +1,2 @@
+[
+{"name": "sf_opportunity", "type": "explore", "children": [{"name": "sf_opportunity", "type": "view", "children": [{"name": "salesforce.sf_opportunity", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

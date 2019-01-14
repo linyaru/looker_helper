@@ -1,0 +1,2 @@
+[
+{"name": "subscription_tab_helper_table", "type": "explore", "children": [{"name": "subscription_tab_helper_table", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

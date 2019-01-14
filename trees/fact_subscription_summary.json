@@ -1,0 +1,2 @@
+[
+{"name": "fact_subscription_summary", "type": "explore", "children": [{"name": "fact_subscription_summary", "type": "view", "children": [{"name": "fact_monthly_subscriptions_ndt", "type": "explore", "children": [{"name": "fact_monthly_subscriptions", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]}]}]

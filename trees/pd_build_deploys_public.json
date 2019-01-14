@@ -1,2 +1,2 @@
 [
-{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "build_data.pd_build_deploys", "type": "sql"}], "name": "pd_build_deploys", "type": "view"}], "name": "pd_build_deploys_public", "type": "explore"}]
+{"name": "pd_build_deploys_public", "type": "explore", "children": [{"name": "pd_build_deploys", "type": "view", "children": [{"name": "build_data.pd_build_deploys", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

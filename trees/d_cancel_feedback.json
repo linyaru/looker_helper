@@ -1,0 +1,2 @@
+[
+{"name": "d_cancel_feedback", "type": "explore", "children": [{"name": "d_date", "type": "view", "children": [{"name": "public.d_date", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}, {"name": "report_system_downgrades", "type": "view", "children": [{"name": "public.report_system_downgrades", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

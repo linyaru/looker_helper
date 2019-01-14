@@ -1,2 +1,2 @@
 [
-{"children": [{"children": [{"name": "Series([], )", "type": "Series([], )"}], "name": "orders", "type": "view"}, {"children": [{"name": "Series([], )", "type": "Series([], )"}], "name": "users", "type": "view"}], "name": "order_items", "type": "explore"}]
+{"name": "order_items", "type": "explore", "children": [{"name": "users", "type": "view", "children": [{"name": "Series([], )", "type": "Series([], )"}]}, {"name": "orders", "type": "view", "children": [{"name": "Series([], )", "type": "Series([], )"}]}]}]

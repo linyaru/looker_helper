@@ -1,2 +1,2 @@
 [
-{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "zz", "type": "view"}], "name": "paid_contractors", "type": "explore"}]
+{"name": "paid_contractors", "type": "explore", "children": [{"name": "zz", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

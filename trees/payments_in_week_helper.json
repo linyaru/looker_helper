@@ -1,2 +1,2 @@
 [
-{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "payments_in_week_helper", "type": "view"}], "name": "payments_in_week_helper", "type": "explore"}]
+{"name": "payments_in_week_helper", "type": "explore", "children": [{"name": "payments_in_week_helper", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

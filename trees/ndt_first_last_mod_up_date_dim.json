@@ -1,0 +1,2 @@
+[
+{"name": "ndt_first_last_mod_up_date_dim", "type": "explore", "children": [{"name": "ndt_first_last_mod_up_date_dim", "type": "view", "children": [{"name": "ndt_first_last_mod_up_date", "type": "explore", "children": [{"name": "ndt_first_last_mod_up_date", "type": "view", "children": [{"name": "report_system_movement_by_type_raw", "type": "explore", "children": [{"name": "report_system_movement_by_type", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]}]}]}]}]

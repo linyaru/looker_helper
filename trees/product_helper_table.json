@@ -1,0 +1,2 @@
+[
+{"name": "product_helper_table", "type": "explore", "children": [{"name": "product_helper_table", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

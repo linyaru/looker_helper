@@ -1,2 +1,2 @@
 [
-{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "public.report_mobile_downloads", "type": "sql"}], "name": "report_mobile_downloads", "type": "view"}], "name": "report_mobile_downloads", "type": "explore"}]
+{"name": "report_mobile_downloads", "type": "explore", "children": [{"name": "report_mobile_downloads", "type": "view", "children": [{"name": "public.report_mobile_downloads", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

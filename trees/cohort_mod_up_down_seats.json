@@ -1,2 +1,2 @@
 [
-{"children": [{"children": [{"children": [{"name": "self", "type": "self"}], "name": "custom_sql_query", "type": "sql"}], "name": "cohort_mod_up_down_seats", "type": "view"}], "name": "cohort_mod_up_down_seats", "type": "explore"}]
+{"name": "cohort_mod_up_down_seats", "type": "explore", "children": [{"name": "cohort_mod_up_down_seats", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]
