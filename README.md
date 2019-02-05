@@ -1,6 +1,6 @@
 # Looker Architecture
 
-LookML repository parser: `lookml_parser.py`
+Call LookML repository parser: `python lookml_parser.py -wd [lookml directory]`
 
 LookML dependencies: (/helper_files)
 * `views.csv`
