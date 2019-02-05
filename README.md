@@ -2,15 +2,6 @@
 
 Call LookML repository parser: `python lookml_parser.py -wd [lookml directory]`
 
-LookML dependencies: (/helper_files)
-* `views.csv`
-* `explores.csv`
-* `view_includes.csv`
-* `model_includes.csv`
-
-LookML model tree visualizations:
-https://s3.amazonaws.com/looker-helper/index.html
-
 ## Parsing Relationships from LookML
 
 While LookML enables on-the-fly data modelling, it is notorious for creating models that are dependent on several `SQL table > View > Auxiliary Explore > View (NDT) > Explore` iterations. To make development in LookerML easier for developers by being able to reference documented dependencies while creating new explores, this dependency parser (`lookml_parser.py`) reads LookML files in a repository and produces the following information:
