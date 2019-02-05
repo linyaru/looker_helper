@@ -1,2 +1,0 @@
-[
-{"name": "selligent_random_speed_chart", "type": "explore", "children": [{"name": "selligent_random_speed_chart", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

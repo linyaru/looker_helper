@@ -1,2 +1,0 @@
-[
-{"name": "explore_heap_users", "type": "explore", "children": [{"name": "heap_users_raw", "type": "view", "children": [{"name": "heap.users", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}, {"name": "roles", "type": "view", "children": [{"name": "masterlock.roles", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

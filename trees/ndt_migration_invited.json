@@ -1,2 +1,0 @@
-[
-{"name": "ndt_migration_invited", "type": "explore", "children": [{"name": "ndt_migration_invited", "type": "view", "children": [{"name": "selligent_summary_raw", "type": "explore", "children": [{"name": "selligent_summary", "type": "view", "children": [{"name": "periscope_bucket.selligent_summary", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]}]}]

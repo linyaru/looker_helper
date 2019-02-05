@@ -1,2 +1,0 @@
-[
-{"name": "payments_daily_helper", "type": "explore", "children": [{"name": "payments_daily_helper", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

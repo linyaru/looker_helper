@@ -1,2 +1,0 @@
-[
-{"name": "ndt_migration_enabled", "type": "explore", "children": [{"name": "ndt_migration_enabled", "type": "view", "children": [{"name": "system_feature", "type": "explore", "children": [{"name": "system_feature", "type": "view", "children": [{"name": "freshstats.system_feature", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]}]}]

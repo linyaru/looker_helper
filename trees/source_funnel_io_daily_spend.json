@@ -1,2 +1,0 @@
-[
-{"name": "source_funnel_io_daily_spend", "type": "explore", "children": [{"name": "source_funnel_io_daily_spend", "type": "view", "children": [{"name": "analytics.source_funnel_io_daily_spend", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

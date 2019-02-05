@@ -1,2 +1,0 @@
-[
-{"name": "selligent_email_drip_logins", "type": "explore", "children": [{"name": "selligent_email_drip_logins", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}, {"name": "report_systems", "type": "view", "children": [{"name": "report_systems", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

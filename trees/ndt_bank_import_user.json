@@ -1,2 +1,0 @@
-[
-{"name": "ndt_bank_import_user", "type": "explore", "children": [{"name": "ndt_bank_import_user", "type": "view", "children": [{"name": "expense", "type": "explore", "children": [{"name": "expense", "type": "view", "children": [{"name": "production_data.live_expense", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]}]}]

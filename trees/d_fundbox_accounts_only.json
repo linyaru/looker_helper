@@ -1,2 +1,0 @@
-[
-{"name": "d_fundbox_accounts_only", "type": "explore", "children": [{"name": "d_fundbox_accounts", "type": "view", "children": [{"name": "public.d_fundbox_accounts", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

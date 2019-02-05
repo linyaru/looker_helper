@@ -1,2 +1,0 @@
-[
-{"name": "product_subscription_events", "type": "explore", "children": [{"name": "product_subscription_events", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

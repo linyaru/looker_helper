@@ -1,2 +1,0 @@
-[
-{"name": "clutter_yodlee_percent_users_banned_last_day", "type": "explore", "children": [{"name": "clutter_yodlee_percent_users_banned_last_day", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

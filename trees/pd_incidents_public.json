@@ -1,2 +1,0 @@
-[
-{"name": "pd_incidents_public", "type": "explore", "children": [{"name": "pd_incidents", "type": "view", "children": [{"name": "build_data.incidents", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

@@ -1,2 +1,0 @@
-[
-{"name": "activation_funnel", "type": "explore", "children": [{"name": "d_date", "type": "view", "children": [{"name": "public.d_date", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}, {"name": "report_subscribers", "type": "view", "children": [{"name": "public.report_subscribers", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}, {"name": "report_systems", "type": "view", "children": [{"name": "report_systems", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

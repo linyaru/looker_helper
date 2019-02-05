@@ -1,2 +1,0 @@
-[
-{"name": "selligent_summary", "type": "explore", "children": [{"name": "selligent_mailing_logs", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}, {"name": "report_systems", "type": "view", "children": [{"name": "report_systems", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}, {"name": "selligent_summary", "type": "view", "children": [{"name": "periscope_bucket.selligent_summary", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

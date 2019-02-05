@@ -1,2 +1,0 @@
-[
-{"name": "cohorts_payment_vol_by_month", "type": "explore", "children": [{"name": "cohorts_payment_vol_by_month", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

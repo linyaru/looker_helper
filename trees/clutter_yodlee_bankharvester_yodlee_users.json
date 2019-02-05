@@ -1,2 +1,0 @@
-[
-{"name": "clutter_yodlee_bankharvester_yodlee_users", "type": "explore", "children": [{"name": "clutter_yodlee_bankharvester_yodlee_users", "type": "view", "children": [{"name": "bankharvester.yodlee_user", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

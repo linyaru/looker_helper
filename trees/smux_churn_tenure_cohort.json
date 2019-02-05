@@ -1,2 +1,0 @@
-[
-{"name": "smux_churn_tenure_cohort", "type": "explore", "children": [{"name": "ndt_smux_churn_tenure_and_cohort", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

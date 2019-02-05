@@ -1,2 +1,0 @@
-[
-{"name": "FACT_daily_cohort_stats_by_reporting_channel", "type": "explore", "children": [{"name": "d_date", "type": "view", "children": [{"name": "public.d_date", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}, {"name": "spend_daily_data_by_reporting_channel", "type": "view", "children": [{"name": "spend_daily_data", "type": "explore", "children": [{"name": "spend_daily_data", "type": "view", "children": [{"name": "custom_sql_query", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]}]}]

@@ -1,2 +1,0 @@
-[
-{"name": "subscription_events_3_0", "type": "explore", "children": [{"name": "report_systems", "type": "view", "children": [{"name": "report_systems", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]

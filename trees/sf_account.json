@@ -1,2 +1,0 @@
-[
-{"name": "sf_account", "type": "explore", "children": [{"name": "sf_account", "type": "view", "children": [{"name": "salesforce.sf_account", "type": "sql", "children": [{"name": "self", "type": "self"}]}]}]}]
