@@ -1,4 +1,4 @@
-# Looker Architecture
+# LookML Helper Tool
 
 Call LookML repository parser: `python lookml_parser.py -wd [lookml directory]`
 
