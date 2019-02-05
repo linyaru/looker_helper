@@ -59,5 +59,5 @@ This parser can be run as many times as required as the repository changes. Curr
 
 ## Visualizing Hierarchies
 
-The parser steps through the first-degree dependencies generated above to generate full tree visualizations for each model (D3.js).
+The parser steps through the first-degree dependencies generated above to generate full tree visualizations for each model (D3.js) in the `\trees` directory, in both JSON and HTML.
 
