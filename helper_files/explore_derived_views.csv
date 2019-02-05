@@ -1,2 +1,2 @@
 ,view_name,view_type,view_source_type,view_source_name,view_file_location,explore_name,explore_file_location,syntax_error
-126,sample_view,derived_table,explore,sample_explore,sample_explore.model.lkml,sample_explore,sample_explore.model.lkml,
+0,sample_view,derived_table,explore,sample_explore,sample_explore.model.lkml,sample_explore,sample_explore.model.lkml,
